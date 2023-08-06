@@ -4,6 +4,26 @@
       "username": "Toks",
       "password": "1234",
       "email": "tokslaw@chiefsoft.com"
+    },
+    {
+      "username": "Law",
+      "password": "1234",
+      "email": "law@taborg.net"
+    },
+    {
+      "username": "Tokslaw",
+      "password": "1234",
+      "email": "tokslaw@taborg.net"
+    },
+    {
+      "username": "Bolu",
+      "password": "1234",
+      "email": "Bolu@taborg.net"
+    },
+    {
+      "username": "david",
+      "password": "1234",
+      "email": "david@taborg.net"
     }
   ]
 }
