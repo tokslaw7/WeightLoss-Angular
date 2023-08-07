@@ -1,19 +1,20 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { FormGroup, FormControl, Validators} from "@angular/forms";
 import { HttpClient } from "@angular/common/http";
 
-
 @Component({
-  selector: 'app-register',
-  templateUrl: './register.component.html',
-  styleUrls: ['./register.component.css']
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
 })
-export class RegisterComponent  implements OnInit{
-  formRegister:FormGroup;
+export class LoginComponent implements OnInit{
+
+  formLogin:FormGroup;
 
   constructor(private http:HttpClient) {
-    this.formRegister = this.createFormGroup();
+    this.formLogin = this.createFormGroup();
   }
+
   ngOnInit(): void {
   }
   createFormGroup() {
@@ -22,11 +23,10 @@ export class RegisterComponent  implements OnInit{
       password: new FormControl('', [Validators.required, Validators.min(2)])
     });
   }
-
   onSubmit(): void {
     this.http.post(
       'http://localhost:3000/employees',
-      this.formRegister.value
+      this.formLogin.value
     )
       .subscribe({
         next: response => console.log(response),
@@ -34,8 +34,5 @@ export class RegisterComponent  implements OnInit{
         complete: () => console.log("Done with getting data")
       });
 
-      // .subscribe(response => console.log(response));
-    // console.log(this.formRegister.value);
   }
-
 }
