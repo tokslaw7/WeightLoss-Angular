@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
-import { Observable } from "rxjs/internal/Observable";
+//import { Observable } from "rxjs";
 
 @Component({
   selector: 'app-employees',
@@ -13,7 +13,7 @@ export class EmployeesComponent implements OnInit{
 
   ngOnInit(): void {
    this.http.get('http://localhost:3000/employees')
-     .subscribe(data =>{
+     .subscribe(data => {
      this.employees = data;
        console.log(this.employees);
     });
