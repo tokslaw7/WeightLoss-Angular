@@ -1,29 +1,59 @@
 {
   "employees": [
     {
+      "id": 1,
       "username": "Toks",
       "password": "1234",
       "email": "tokslaw@chiefsoft.com"
     },
     {
+      "id": 2,
       "username": "Law",
       "password": "1234",
       "email": "law@taborg.net"
     },
     {
+      "id": 3,
       "username": "Tokslaw",
       "password": "1234",
       "email": "tokslaw@taborg.net"
     },
     {
+      "id": 4,
       "username": "Bolu",
       "password": "1234",
       "email": "Bolu@taborg.net"
     },
     {
+      "id": 5,
       "username": "David",
       "password": "1234",
       "email": "david@taborg.net"
+    },
+    {
+      "username": "tokslaw",
+      "password": "1234",
+      "id": 6
+    },
+    {
+      "username": "jane",
+      "password": "1234",
+      "id": 7
+    },
+    {
+      "username": "dave",
+      "password": "12345",
+      "id": 8
+    },
+    {
+      "username": "tlawal2",
+      "password": "123",
+      "id": 9
+    },
+    {
+      "username": "tlawal2",
+      "password": "123",
+      "id": 10
     }
   ]
 }
